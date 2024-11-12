@@ -39,8 +39,9 @@ sudo apt-get install imapsync
    Create an `accounts.txt` file in the root directory with email and password pairs, each pair on a new line, separated by a space:
 
    ```plaintext
-   user1@example.com password1
-   user2@example.com password2
+   user1@example.com source_password1 dest_password1
+   user2@example.com source_password2 dest_password2
+
    ```
 
 4. **Make Scripts Executable**  
@@ -69,8 +70,9 @@ The script will:
 Example for `accounts.txt`:
 
 ```plaintext
-alice@example.com alice_password
-bob@example.com bob_password
+user1@example.com source_password1 dest_password1
+user2@example.com source_password2 dest_password2
+
 ```
 
 Example for `config.sh`:
